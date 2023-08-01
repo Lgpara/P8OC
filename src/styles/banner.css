@@ -1,0 +1,26 @@
+.bannerContainer {
+  margin-bottom: 30px;
+}
+.bannerContainer .bannerImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.bannerContainer .bannerImgContainer .bannerImg {
+  width: 100%;
+}
+.bannerContainer .bannerTxt {
+  height: 223px;
+  margin-top: -223px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  border-radius: 25px;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=banner.css.map */

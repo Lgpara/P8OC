@@ -1,0 +1,36 @@
+.locCardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  padding: 50px;
+  width: 100%;
+  background: #F6F6F6;
+  border-radius: 25px;
+}
+.locCardContainer .locCard {
+  height: 340px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.locCardContainer .locCard p {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  display: flex;
+  align-items: end;
+  position: relative;
+  z-index: 99;
+  margin-top: -340px;
+  color: white;
+  height: 340px;
+}
+.locCardContainer .locCard .imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+}
+.locCardContainer .locCard .imgContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=locations.css.map */

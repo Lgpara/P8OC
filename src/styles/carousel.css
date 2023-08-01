@@ -1,0 +1,31 @@
+.carouselContainer {
+  margin-bottom: 200px;
+  border-radius: 25px;
+}
+.carouselContainer .imgContainer {
+  height: 415px;
+  overflow: hidden;
+}
+.carouselContainer .imgContainer .img {
+  height: 100%;
+  width: 100%;
+}
+.carouselContainer .navArrowContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 415px;
+  margin-top: -415px;
+  position: relative;
+  z-index: 99;
+}
+.carouselContainer .navArrowContainer .navArrowL, .carouselContainer .navArrowContainer .navArrowR {
+  width: 96px;
+}
+.carouselContainer .navArrowContainer p {
+  height: 100%;
+  display: flex;
+  align-items: end;
+  color: white;
+  padding-bottom: 30px;
+}/*# sourceMappingURL=carousel.css.map */

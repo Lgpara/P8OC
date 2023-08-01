@@ -1,0 +1,9 @@
+.banner2container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
+  overflow: hidden;
+  border-radius: 25px;
+  fill-opacity: 0.5;
+}/*# sourceMappingURL=banner2.css.map */
