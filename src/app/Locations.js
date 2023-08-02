@@ -1,4 +1,5 @@
 import LocationData from "../content/data.json"
+import "../styles/locations.css"
 
 function Location () {
     return (

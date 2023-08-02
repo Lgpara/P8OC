@@ -1,0 +1,97 @@
+$mainColor: #FF6060; 
+
+@mixin blocStyle {
+    padding: 10px;
+    width: 100%;
+    background-color: $mainColor;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+@mixin txt1props {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+@mixin txt2props {
+    font-size: 18px;
+    font-weight: 300;
+    color: $mainColor;
+    padding: 15px 10px 10px 10px;
+    margin-top: -5px;
+    background-color: #F6F6F6;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+@mixin arrowStyles {
+    transform: rotate(90deg);
+    width: 32px;
+    height: 32px;
+}
+
+
+.containerApropos {
+    .container1{
+        .bloc1{
+            @include blocStyle();
+            p {
+                @include txt1props();
+            }
+            img {
+                @include arrowStyles();
+            }
+        }
+        .aboutBloc1 {
+            @include txt2props();
+        }
+    }
+    .container2{
+        .bloc2{
+            @include blocStyle();
+            p {
+                @include txt1props();
+            }
+            img {
+                @include arrowStyles();
+            }
+        }
+        .aboutBloc2 {
+            @include txt2props();
+        }
+    }
+    .container3{
+        .bloc3{
+            @include blocStyle();
+            p {
+                @include txt1props();
+            }
+            img {
+                @include arrowStyles();
+            }
+        }
+        .aboutBloc3 {
+            @include txt2props();
+        }
+    }
+    .container4{
+        .bloc4{
+            @include blocStyle();
+            p {
+                @include txt1props();
+            }
+            img {
+                @include arrowStyles();
+            }
+        }
+        .aboutBloc4 {
+            @include txt2props();
+        }
+    }
+}

@@ -1,40 +1,78 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import reportWebVitals from './reportWebVitals';
+
+// //Styles
+
+// import "./styles/locations.css"
+
+// //
+
+// // Components
+
+// import Header from "./app/Header"
+// import Banner from "./app/Banner"
+// import Location from './app/Locations';
+// import Footer from './app/Footer';
+
+
+// import ContentApropos from './app/ContentApropos';
+// import Error404 from './app/404';
+// import Banner2 from './app/Banner2';
+// import StarRating from './app/StarRating';
+
+// // Components
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <Header />
+//     <ContentApropos />
+//     <StarRating />
+//     <Banner2 />
+//     <Error404 />
+//     <Banner />
+//     <Location />
+//     <Footer />
+//   </React.StrictMode>
+// );
+
+// reportWebVitals();
+
+
+
+
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
-//Styles
-
+//styles 
 import "./styles/main.css"
-import "./styles/locations.css"
-
-//
-
-// Components
-
 import Header from "./app/Header"
-import Banner from "./app/Banner"
-import Location from './app/Locations';
-import Footer from './app/Footer';
+import Main from "./app/Main"
+import About from "./app/About";
 
-import Error404 from './app/404';
-import Carousel from './app/Carousel';
-import Banner2 from './app/Banner2';
 
-// Components
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Main />,
+  },
+  {
+    path: "about",
+    element: <About />,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Header />
-    <Banner2 />
-    <Carousel />
-    <Error404 />
-    <Banner />
-    <Location />
-    <Footer />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+
 reportWebVitals();

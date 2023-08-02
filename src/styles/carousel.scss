@@ -1,12 +1,15 @@
 .carouselContainer {
     margin-bottom: 200px;
     border-radius: 25px;
+    background-color: grey;
+    overflow: hidden;
     .imgContainer {
         height: 415px;
         overflow: hidden;
-        .img {
+        img {
             height: 100%;
             width: 100%;
+            object-fit: cover;
         }
     }
     .navArrowContainer {

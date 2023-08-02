@@ -1,0 +1,128 @@
+.containerApropos .container1 .bloc1 {
+  padding: 10px;
+  width: 100%;
+  background-color: #FF6060;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.containerApropos .container1 .bloc1 p {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.containerApropos .container1 .bloc1 img {
+  transform: rotate(90deg);
+  width: 32px;
+  height: 32px;
+}
+.containerApropos .container1 .aboutBloc1 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #FF6060;
+  padding: 15px 10px 10px 10px;
+  margin-top: -5px;
+  background-color: #F6F6F6;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}
+.containerApropos .container2 .bloc2 {
+  padding: 10px;
+  width: 100%;
+  background-color: #FF6060;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.containerApropos .container2 .bloc2 p {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.containerApropos .container2 .bloc2 img {
+  transform: rotate(90deg);
+  width: 32px;
+  height: 32px;
+}
+.containerApropos .container2 .aboutBloc2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #FF6060;
+  padding: 15px 10px 10px 10px;
+  margin-top: -5px;
+  background-color: #F6F6F6;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}
+.containerApropos .container3 .bloc3 {
+  padding: 10px;
+  width: 100%;
+  background-color: #FF6060;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.containerApropos .container3 .bloc3 p {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.containerApropos .container3 .bloc3 img {
+  transform: rotate(90deg);
+  width: 32px;
+  height: 32px;
+}
+.containerApropos .container3 .aboutBloc3 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #FF6060;
+  padding: 15px 10px 10px 10px;
+  margin-top: -5px;
+  background-color: #F6F6F6;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}
+.containerApropos .container4 .bloc4 {
+  padding: 10px;
+  width: 100%;
+  background-color: #FF6060;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.containerApropos .container4 .bloc4 p {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.containerApropos .container4 .bloc4 img {
+  transform: rotate(90deg);
+  width: 32px;
+  height: 32px;
+}
+.containerApropos .container4 .aboutBloc4 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #FF6060;
+  padding: 15px 10px 10px 10px;
+  margin-top: -5px;
+  background-color: #F6F6F6;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}/*# sourceMappingURL=contentApropos.css.map */

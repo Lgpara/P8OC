@@ -6,4 +6,11 @@
   overflow: hidden;
   border-radius: 25px;
   fill-opacity: 0.5;
+  background-color: grey;
+}
+.banner2container .banner2img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=banner2.css.map */
