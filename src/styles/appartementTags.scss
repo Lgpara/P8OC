@@ -1,0 +1,15 @@
+.tagsContainer {
+    display: flex;
+    width: 70%;
+    .tags {
+        color: white;
+        background-color: #FF6060;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        margin-right: 6px;
+        width: 18%;
+        border-radius: 10px;
+    }
+}

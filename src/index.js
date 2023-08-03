@@ -54,6 +54,7 @@ import "./styles/main.css"
 import Header from "./app/Header"
 import Main from "./app/Main"
 import About from "./app/About";
+import Render from "./app/Render";
 
 
 const router = createBrowserRouter([
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
     path: "about",
     element: <About />,
   },
+  {
+    path: "render",
+    element: <Render />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -1,0 +1,14 @@
+.appartementEquipContainer .headBloc {
+  display: flex;
+  background-color: #FF6060;
+  justify-content: space-between;
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+}
+.appartementEquipContainer .headBloc .arrow {
+  transform: rotate(90deg);
+  width: 32px;
+  height: 32px;
+}/*# sourceMappingURL=appartementEquip.css.map */

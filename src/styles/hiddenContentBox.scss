@@ -1,0 +1,57 @@
+$mainColor: #FF6060; 
+
+@mixin headStyle {
+    padding: 10px;
+    width: 100%;
+    background-color: $mainColor;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+@mixin headTxtStyle {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+@mixin contentStyle {
+    font-size: 18px;
+    font-weight: 300;
+    color: $mainColor;
+    padding: 15px 10px 10px 10px;
+    margin-top: -5px;
+    background-color: #F6F6F6;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+@mixin arrowStyles {
+    transform: rotate(90deg);
+    width: 32px;
+    height: 32px;
+}
+
+
+
+
+
+
+.boxContainer {
+    .headContainer{
+        @include headStyle();
+        p{
+            @include headTxtStyle();
+        }
+        img{
+            @include arrowStyles();
+        }
+    }
+    .contentContainer{
+        @include contentStyle();
+    }
+}

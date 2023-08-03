@@ -1,0 +1,32 @@
+.boxContainer .headContainer {
+  padding: 10px;
+  width: 100%;
+  background-color: #FF6060;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.boxContainer .headContainer p {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.boxContainer .headContainer img {
+  transform: rotate(90deg);
+  width: 32px;
+  height: 32px;
+}
+.boxContainer .contentContainer {
+  font-size: 18px;
+  font-weight: 300;
+  color: #FF6060;
+  padding: 15px 10px 10px 10px;
+  margin-top: -5px;
+  background-color: #F6F6F6;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}/*# sourceMappingURL=hiddenContentBox.css.map */
