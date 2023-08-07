@@ -20,7 +20,7 @@ $mainColor: #FF6060;
 
 @mixin contentStyle {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 300 !important;
     color: $mainColor;
     padding: 15px 10px 10px 10px;
     margin-top: -5px;
@@ -28,6 +28,7 @@ $mainColor: #FF6060;
     position: relative;
     z-index: 1;
     border-radius: 5px;
+    width: 100%;
 }
 
 @mixin arrowStyles {

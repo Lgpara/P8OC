@@ -1,0 +1,7 @@
+.AppartementInfosContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.AppartementInfosContainer * {
+  width: 48%;
+}/*# sourceMappingURL=appartementInfos.css.map */

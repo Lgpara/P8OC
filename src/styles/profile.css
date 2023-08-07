@@ -1,0 +1,9 @@
+.profileContainer {
+  display: flex;
+}
+.profileContainer p {
+  color: #FF6060;
+}
+.profileContainer img {
+  border-radius: 50%;
+}/*# sourceMappingURL=profile.css.map */

@@ -21,7 +21,7 @@
 }
 .boxContainer .contentContainer {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 300 !important;
   color: #FF6060;
   padding: 15px 10px 10px 10px;
   margin-top: -5px;
@@ -29,4 +29,5 @@
   position: relative;
   z-index: 1;
   border-radius: 5px;
+  width: 100%;
 }/*# sourceMappingURL=hiddenContentBox.css.map */
