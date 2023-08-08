@@ -4,35 +4,37 @@ import data from "../content/data.json"
 import "../styles/carousel.css"
 import React, { useState } from 'react';
 
-// let carouselImgs = data[0].pictures[carouselPos]
-// let carouselLength = data[0].pictures.length
-
-let carouselPos = 0
 
 
 function Carousel () {
-    const [imgValue, setImgValue] = useState(data[0].pictures[carouselPos])
-    let carouselImgs = useState(data[0].pictures[carouselPos])
-    let carouselLength = data[0].pictures.length
-    function carouselScript(variable){
-        carouselPos = carouselPos + variable
-        if(carouselPos > carouselLength - 1){
-            carouselPos = 0
+    const [carouselPos, setCarouselPos] = useState(0)
+    const carouselImgs = data[0].pictures[carouselPos]
+    const carouselLength = data[0].pictures.length
+
+    const leftClick = () => {
+        if(carouselPos === 0){
+            setCarouselPos(carouselLength - 1)
+        } else {
+            setCarouselPos(carouselPos - 1)
         }
-        if(carouselPos < 0){
-            carouselPos = carouselLength - 1
-        }
-        console.log(carouselPos)
     }
+    const rightClick = () => {
+        if(carouselPos === carouselLength - 1){
+            setCarouselPos(0)
+        }else{
+            setCarouselPos(carouselPos + 1)
+        }
+    }
+
     return(
         <div className="carouselContainer">
             <div className="imgContainer">
                 <img src={carouselImgs} />
             </div>
             <div className="navArrowContainer">
-                <img onClick={() => carouselScript(-1)} className="navArrowL" src={leftArrow} />
+                <img onClick={leftClick} className="navArrowL" src={leftArrow} />
                 <p>{carouselPos + 1}/{carouselLength}</p>
-                <img onClick={() => carouselScript(1)} className="navArrowR" src={rightArrow} />
+                <img onClick={rightClick} className="navArrowR" src={rightArrow} />
             </div>
         </div>
     )

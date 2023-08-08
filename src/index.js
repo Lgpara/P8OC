@@ -12,6 +12,8 @@ import Main from "./app/Main"
 import About from "./app/About";
 import Render from "./app/Render";
 import FicheLogement from "./app/FicheLogement";
+import data from "./content/data.json"
+
 
 
 const router = createBrowserRouter([

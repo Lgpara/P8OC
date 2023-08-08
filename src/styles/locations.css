@@ -23,6 +23,7 @@
   margin-top: -340px;
   color: white;
   height: 340px;
+  pointer-events: none;
 }
 .locCardContainer .locCard .imgContainer {
   display: flex;

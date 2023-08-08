@@ -8,6 +8,8 @@ import StarRating from "./StarRating"
 import Profile from "./Profile"
 import "../styles/ficheLogement.css"
 
+
+
 function FicheLogement(){
     return(
         <main>

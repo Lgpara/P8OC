@@ -1,15 +1,27 @@
 import LocationData from "../content/data.json"
 import "../styles/locations.css"
+import { Link } from "react-router-dom"
+import React, {useState} from "react"
 
 function Location () {
+
+    const [selectedAppartement, setSelectedAppartement] = useState(null)
+
+    const handleClick = (appartementId) => {
+        const appartementIndex = LocationData.findIndex(location => location.id === appartementId)
+        setSelectedAppartement(appartementIndex)
+        console.log(appartementIndex) 
+    }
+
+
     return (
         <div className="locCardContainer">
             {LocationData.map(location => {
                 return (
                     <div className="locCard">
-                        <div className="imgContainer">
+                        <Link onClick={() => handleClick(location.id)} to="/fiche-logement" className="imgContainer">
                             <img key={location.id} src={location.cover} alt={location.title} />
-                        </div>
+                        </Link>
                         <p>{location.title}</p>
                     </div>
                 )
