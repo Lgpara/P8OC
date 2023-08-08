@@ -4,7 +4,8 @@ import "../styles/starRating.css"
 
 
 
-function starRating(){
+function starRating(props){
+    const index = props.appartementIndex
     return(
         <div className='starContainer'>
             <FontAwesomeIcon icon={faStar} className='star selected' />

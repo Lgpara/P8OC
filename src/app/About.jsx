@@ -3,7 +3,6 @@ import Header from "./Header"
 import Footer from "./Footer"
 import ContentAbout from "./ContentAbout"
 
-
 function About(){
     return(
         <main>

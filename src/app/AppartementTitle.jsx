@@ -1,11 +1,12 @@
 import data from "../content/data.json"
 import "../styles/appartementTitle.css"
 
-let appartementName = data[0].title
-let appartementLoc = data[0].location
 
 
-function AppartementTitle (){
+function AppartementTitle (props){
+    const index = props.appartementIndex
+    const appartementName = data[index].title
+    const appartementLoc = data[index].location
     return(
         <div className="appartementTitleContainer">
             <h2>{appartementName}</h2>

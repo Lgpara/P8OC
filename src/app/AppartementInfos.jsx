@@ -2,12 +2,13 @@ import data from "../content/data.json"
 import HiddenContentBox from "./HiddenContentBox"
 import "../styles/appartementInfos.css"
 
-function AppartementInfos(){
+function AppartementInfos(props){
+    const index = props.appartementIndex
     
     return(
         <div className="AppartementInfosContainer">
-            <HiddenContentBox headTitleValue="Description" contentValue={data[0].description} />
-            <HiddenContentBox headTitleValue="Équipements" contentValue={data[0].equipments.map((equipments) =>(<div key={equipments}>{equipments}</div>))} />
+            <HiddenContentBox headTitleValue="Description" contentValue={data[index].description} />
+            <HiddenContentBox headTitleValue="Équipements" contentValue={data[index].equipments.map((equipments) =>(<div key={equipments}>{equipments}</div>))} />
         </div>
     )
 }

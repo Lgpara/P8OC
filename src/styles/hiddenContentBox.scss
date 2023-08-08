@@ -16,19 +16,22 @@ $mainColor: #FF6060;
     font-size: 24px;
     font-weight: 500;
     color: white;
+    overflow: hidden;
 }
 
 @mixin contentStyle {
     font-size: 18px;
     font-weight: 300 !important;
     color: $mainColor;
-    padding: 15px 10px 10px 10px;
+    // padding: 15px 10px 10px 10px;
     margin-top: -5px;
     background-color: #F6F6F6;
     position: relative;
     z-index: 1;
     border-radius: 5px;
     width: 100%;
+    height: 0px;
+    overflow: hidden;
 }
 
 @mixin arrowStyles {
@@ -37,12 +40,33 @@ $mainColor: #FF6060;
     height: 32px;
 }
 
+@keyframes showBox {
+    from {
+        height: 0;
+        padding: 0 10px 0 10px;
+    }
+    to {
+        height: fit-content;
+        padding: 15px 10px 10px 10px;
+    }
+}
+
+@keyframes arrowAnim {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
 
 
 
 
 
 .boxContainer {
+    margin-bottom: 30px;
     .headContainer{
         @include headStyle();
         p{
@@ -51,8 +75,14 @@ $mainColor: #FF6060;
         img{
             @include arrowStyles();
         }
+        .arrowAnim {
+            animation: arrowAnim 0.2s ease forwards;
+        }
     }
     .contentContainer{
         @include contentStyle();
+    }
+    .contentAnim {
+        animation: showBox 0.2s ease forwards;
     }
 }

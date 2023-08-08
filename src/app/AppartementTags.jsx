@@ -1,13 +1,12 @@
 import data from "../content/data.json"
 import "../styles/appartementTags.css"
 
-let carouselImgs = data[0].pictures[0]
-let carouselLength = data[0].pictures.length
 
-function AppartementTags(){
+function AppartementTags(props){
+    const index = props.appartementIndex
     return(
         <div className="tagsContainer">
-            {data[0].tags.map((tags) => (
+            {data[index].tags.map((tags) => (
                 <p className="tags" key={tags}>{tags}</p>
             ))}
         </div>

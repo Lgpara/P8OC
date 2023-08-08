@@ -19,7 +19,7 @@ function Location () {
             {LocationData.map(location => {
                 return (
                     <div className="locCard">
-                        <Link onClick={() => handleClick(location.id)} to="/fiche-logement" className="imgContainer">
+                        <Link onClick={() => handleClick(location.id)} to={`/fiche-logement/${location.id}`} className="imgContainer">
                             <img key={location.id} src={location.cover} alt={location.title} />
                         </Link>
                         <p>{location.title}</p>

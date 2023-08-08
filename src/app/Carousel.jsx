@@ -6,10 +6,11 @@ import React, { useState } from 'react';
 
 
 
-function Carousel () {
+function Carousel (props) {
+    const index = props.appartementIndex
     const [carouselPos, setCarouselPos] = useState(0)
-    const carouselImgs = data[0].pictures[carouselPos]
-    const carouselLength = data[0].pictures.length
+    const carouselImgs = data[index].pictures[carouselPos]
+    const carouselLength = data[index].pictures.length
 
     const leftClick = () => {
         if(carouselPos === 0){
