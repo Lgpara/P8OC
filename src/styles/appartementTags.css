@@ -2,6 +2,12 @@
   display: flex;
   width: 70%;
 }
+@media only screen and (max-width: 768px) {
+  .tagsContainer {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 .tagsContainer .tags {
   color: white;
   background-color: #FF6060;
@@ -14,4 +20,12 @@
   min-width: fit-content;
   width: 15vw;
   border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .tagsContainer .tags {
+    font-size: 10px;
+    line-height: 14px;
+    width: 22vw;
+    border-radius: 5px;
+  }
 }/*# sourceMappingURL=appartementTags.css.map */

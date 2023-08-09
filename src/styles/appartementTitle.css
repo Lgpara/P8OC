@@ -1,4 +1,20 @@
 .appartementTitleContainer {
   color: #FF6060;
   margin-bottom: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .appartementTitleContainer {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .appartementTitleContainer h2 {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+}
+.appartementTitleContainer p {
+  font-size: 14px;
+  line-height: 20px;
 }/*# sourceMappingURL=appartementTitle.css.map */

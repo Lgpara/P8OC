@@ -1,12 +1,16 @@
 .carouselContainer {
   margin-bottom: 20px;
   border-radius: 25px;
-  background-color: grey;
   overflow: hidden;
 }
 .carouselContainer .imgContainer {
   height: 415px;
   overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .carouselContainer .imgContainer {
+    height: 255px;
+  }
 }
 .carouselContainer .imgContainer img {
   height: 100%;
@@ -23,8 +27,19 @@
   position: relative;
   z-index: 99;
 }
+@media only screen and (max-width: 768px) {
+  .carouselContainer .navArrowContainer {
+    height: 255px;
+    margin-top: -255px;
+  }
+}
 .carouselContainer .navArrowContainer .navArrowL, .carouselContainer .navArrowContainer .navArrowR {
   width: 96px;
+}
+@media only screen and (max-width: 768px) {
+  .carouselContainer .navArrowContainer .navArrowL, .carouselContainer .navArrowContainer .navArrowR {
+    width: 24px;
+  }
 }
 .carouselContainer .navArrowContainer p {
   height: 100%;
@@ -32,4 +47,9 @@
   align-items: end;
   color: white;
   padding-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .carouselContainer .navArrowContainer p {
+    display: none;
+  }
 }/*# sourceMappingURL=carousel.css.map */

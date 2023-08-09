@@ -1,3 +1,8 @@
 .contentAboutContainer {
   padding: 5%;
+}
+@media only screen and (max-width: 768px) {
+  .contentAboutContainer {
+    padding: 0;
+  }
 }/*# sourceMappingURL=contentAbout.css.map */

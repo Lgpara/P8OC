@@ -20,6 +20,11 @@
 .boxContainer {
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .boxContainer {
+    margin-bottom: 24px;
+  }
+}
 .boxContainer .headContainer {
   padding: 10px;
   width: 100%;
@@ -31,16 +36,33 @@
   position: relative;
   z-index: 2;
 }
+@media only screen and (max-width: 768px) {
+  .boxContainer .headContainer {
+    padding: 0px;
+  }
+}
 .boxContainer .headContainer p {
   font-size: 24px;
   font-weight: 500;
   color: white;
   overflow: hidden;
 }
+@media only screen and (max-width: 768px) {
+  .boxContainer .headContainer p {
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: 10px;
+  }
+}
 .boxContainer .headContainer img {
   transform: rotate(90deg);
   width: 32px;
   height: 32px;
+}
+@media only screen and (max-width: 768px) {
+  .boxContainer .headContainer img {
+    margin-right: 10px;
+  }
 }
 .boxContainer .headContainer .arrowAnim {
   animation: arrowAnim 0.2s ease forwards;

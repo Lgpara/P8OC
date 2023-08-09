@@ -2,8 +2,19 @@ main {
     .infosBloc {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 30px;
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 16px;
+        }
         .rightPart {
-
+            @media only screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
     }
 }

@@ -11,6 +11,7 @@ import "./styles/main.css"
 import Main from "./app/Main"
 import About from "./app/About";
 import Render from "./app/Render";
+import Page404 from "./app/page404";
 import FicheLogement from "./app/FicheLogement";
 import data from "./content/data.json"
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "fiche-logement/:id",
     element: <FicheLogement />,
+  },
+  {
+    path:"*",
+    element: <Page404 />,
   }
 ]);
 

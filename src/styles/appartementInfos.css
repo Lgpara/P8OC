@@ -4,4 +4,14 @@
 }
 .AppartementInfosContainer * {
   width: 48%;
+}
+@media only screen and (max-width: 768px) {
+  .AppartementInfosContainer * {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .AppartementInfosContainer {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=appartementInfos.css.map */

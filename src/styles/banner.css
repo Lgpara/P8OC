@@ -1,6 +1,11 @@
 .bannerContainer {
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .bannerContainer {
+    margin-bottom: 26px;
+  }
+}
 .bannerContainer .bannerImgContainer {
   display: flex;
   justify-content: center;
@@ -8,6 +13,12 @@
   height: 223px;
   overflow: hidden;
   border-radius: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .bannerContainer .bannerImgContainer {
+    height: 110px;
+    border-radius: 10px;
+  }
 }
 .bannerContainer .bannerImgContainer .bannerImg {
   width: 100%;
@@ -23,4 +34,14 @@
   border-radius: 25px;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 768px) {
+  .bannerContainer .bannerTxt {
+    height: 110px;
+    margin-top: -110px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 14px;
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=banner.css.map */

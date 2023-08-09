@@ -3,6 +3,9 @@
     * {
         color: #FF6060;
     }
+    @media only screen and (max-width: 768px) {
+        margin-top: 90px;
+    }
     div {
         font-size: 20vw;
         font-weight: 700;
@@ -11,10 +14,19 @@
     p {
         font-size: 36px;
         margin-bottom: 100px;
+        @media only screen and (max-width: 768px) {
+            font-size: 18px;
+            line-height: 25px;
+            padding: 0 30px;
+        }
     }
     a {
         display: block;
         text-decoration: underline;
         margin-bottom: 100px;
+        @media only screen and (max-width: 768px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
 }

@@ -1,4 +1,20 @@
 main .infosBloc {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+  main .infosBloc {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .infosBloc .rightPart {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }/*# sourceMappingURL=ficheLogement.css.map */

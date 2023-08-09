@@ -1,11 +1,13 @@
 .carouselContainer {
     margin-bottom: 20px;
     border-radius: 25px;
-    background-color: grey;
     overflow: hidden;
     .imgContainer {
         height: 415px;
         overflow: hidden;
+        @media only screen and (max-width: 768px) {
+            height: 255px;
+        }
         img {
             height: 100%;
             width: 100%;
@@ -20,8 +22,15 @@
         margin-top: -415px ;
         position: relative;
         z-index: 99;
+        @media only screen and (max-width: 768px) {
+            height: 255px;
+            margin-top: -255px;
+        }
         .navArrowL, .navArrowR {
             width: 96px;
+            @media only screen and (max-width: 768px) {
+                width: 24px;
+            }
         }
         p {
             height: 100%;
@@ -29,6 +38,9 @@
             align-items: end;
             color: white;
             padding-bottom: 30px;
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
         }
     }
 }

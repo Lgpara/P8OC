@@ -3,6 +3,12 @@
   padding: 6px;
   font-size: 24px;
 }
+@media only screen and (max-width: 768px) {
+  .starContainer .star {
+    font-size: 18px;
+    padding: 4px;
+  }
+}
 .starContainer .selected {
   color: #FF6060 !important;
 }/*# sourceMappingURL=starRating.css.map */

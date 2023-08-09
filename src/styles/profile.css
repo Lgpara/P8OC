@@ -1,9 +1,34 @@
 .profileContainer {
+  margin-bottom: 20px;
   display: flex;
+  justify-content: flex-end;
 }
-.profileContainer p {
+@media only screen and (max-width: 768px) {
+  .profileContainer {
+    justify-content: flex-start;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+}
+.profileContainer div {
   color: #FF6060;
+  margin-right: 15px;
+  text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  .profileContainer div p {
+    font-size: 12px;
+    line-height: 17px;
+  }
 }
 .profileContainer img {
   border-radius: 50%;
+  height: 64px;
+  width: 64px;
+}
+@media only screen and (max-width: 768px) {
+  .profileContainer img {
+    height: 32px;
+    width: 32px;
+  }
 }/*# sourceMappingURL=profile.css.map */
