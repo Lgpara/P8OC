@@ -1,0 +1,38 @@
+.bloc404 {
+  text-align: center;
+}
+.bloc404 * {
+  color: #FF6060;
+}
+@media only screen and (max-width: 768px) {
+  .bloc404 {
+    margin-top: 90px;
+  }
+}
+.bloc404 div {
+  font-size: 20vw;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.bloc404 p {
+  font-size: 36px;
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 768px) {
+  .bloc404 p {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 30px;
+  }
+}
+.bloc404 a {
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 768px) {
+  .bloc404 a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}/*# sourceMappingURL=error404.css.map */

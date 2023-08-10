@@ -8,12 +8,11 @@ import reportWebVitals from './reportWebVitals';
 
 //styles 
 import "./styles/main.css"
-import Main from "./app/Main"
-import About from "./app/About";
-import Render from "./app/Render";
-import Page404 from "./app/page404";
-import FicheLogement from "./app/FicheLogement";
-import data from "./content/data.json"
+import Main from "./app/Components/Main/Main"
+import About from "./app/Components/About/About";
+import Page404 from "./app/Components/Page404/Page404";
+import FicheLogement from "./app/Components/AppartementsPage/FicheLogement";
+
 
 
 
@@ -27,17 +26,13 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "render",
-    element: <Render />,
-  },
-  {
     path: "fiche-logement/:id",
     element: <FicheLogement />,
   },
   {
     path:"*",
     element: <Page404 />,
-  }
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
