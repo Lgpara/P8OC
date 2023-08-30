@@ -1,9 +1,8 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
-//styles
 import './styles/main.css';
 import Main from './app/Components/Main/Main';
 import About from './app/Components/About/About';
@@ -12,61 +11,26 @@ import FicheLogement from './app/Components/AppartementsPage/FicheLogement';
 import Header from './app/Components/General/Header/Header';
 import Footer from './app/Components/General/Footer/Footer';
 
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: (
+const App = () => {
+  return (
+    <BrowserRouter>
       <div>
         <Header />
-        <Main />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="about" element={<About />} />
+          <Route path="fiche-logement/:id" element={<FicheLogement />} />
+          <Route path="*" element={<Page404 />} />
+        </Routes>
         <Footer />
       </div>
-    ),
-  },
-  {
-    path: 'about',
-    element: (
-      <div>
-        <Header />
-        <About />
-        <Footer />
-      </div>
-    ),
-  },
-  {
-    path: 'fiche-logement/:id',
-    element: (
-      <div>
-        <Header />
-        <FicheLogement />
-        <Footer />
-      </div>
-    ),
-    errorElement: (
-      <div>
-        <Header />
-        <Page404 />
-        <Footer />
-      </div>
-    ),
-  },
-  {
-    path: '*',
-    element: (
-      <div>
-        <Header />
-        <Page404 />
-        <Footer />
-      </div>
-    ),
-  },
-]);
-
+    </BrowserRouter>
+  );
+};
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App />
   </React.StrictMode>
 );
 
