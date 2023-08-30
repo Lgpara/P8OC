@@ -12,7 +12,7 @@ function Profile(props){
                 <p>{hostNameSplit[0]}</p>
                 <p>{hostNameSplit[1]}</p>
             </div>
-            <img src={host.picture} />
+            <img src={host.picture} alt="Propriétaire de l'appartement" />
         </div>
     )
 }

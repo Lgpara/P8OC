@@ -18,7 +18,7 @@ function HiddenContentBox(props) {
         <div className="boxContainer">
             <div className="headContainer">
                 <p>{headTitleValue}</p>
-                <img className={animationStatus ? "arrowAnim" : ""} onClick={animationUpdate} src={arrow} />
+                <img alt="arrow" className={animationStatus ? "arrowAnim" : ""} onClick={animationUpdate} src={arrow} />
             </div>
             <div className={`contentContainer ${animationStatus? "contentAnim" : ""}`}>
                 {contentValue}

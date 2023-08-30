@@ -30,12 +30,12 @@ function Carousel (props) {
     return(
         <div className="carouselContainer">
             <div className="imgContainer">
-                <img src={carouselImgs} />
+                <img src={carouselImgs} alt="Appartement" />
             </div>
             <div className="navArrowContainer">
-                <img onClick={leftClick} className="navArrowL" src={leftArrow} />
+                <img alt="Flèche de navigation gauche" onClick={leftClick} className="navArrowL" src={leftArrow} />
                 <p>{carouselPos + 1}/{carouselLength}</p>
-                <img onClick={rightClick} className="navArrowR" src={rightArrow} />
+                <img alt="Flèche de navigation droite" onClick={rightClick} className="navArrowR" src={rightArrow} />
             </div>
         </div>
     )
