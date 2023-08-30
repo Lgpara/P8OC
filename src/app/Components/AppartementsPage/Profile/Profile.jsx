@@ -1,9 +1,8 @@
-import data from "../../../../content/data.json"
 import "./styles/profile.css"
 
 function Profile(props){
-    const index = props.appartementIndex
-    const host = data[index].host
+    const data = props.appartementData
+    const host = data.host
     const hostName = host.name
     const hostNameSplit = hostName.split(' ')
     return(

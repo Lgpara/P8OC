@@ -1,9 +1,10 @@
 import React from 'react';
+import { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import reportWebVitals from './reportWebVitals';
 
-import './styles/main.css';
+import './styles/index.css';
+
 import Main from './app/Components/Main/Main';
 import About from './app/Components/About/About';
 import Page404 from './app/Components/Page404/Page404';
@@ -11,10 +12,16 @@ import FicheLogement from './app/Components/AppartementsPage/FicheLogement';
 import Header from './app/Components/General/Header/Header';
 import Footer from './app/Components/General/Footer/Footer';
 
+import data from "./content/data.json"
+
+import reportWebVitals from './reportWebVitals';
+
 const App = () => {
+  useEffect(()=>{  
+    localStorage.setItem('Data', JSON.stringify(data));
+  })
   return (
     <BrowserRouter>
-      <div>
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />
@@ -23,7 +30,6 @@ const App = () => {
           <Route path="*" element={<Page404 />} />
         </Routes>
         <Footer />
-      </div>
     </BrowserRouter>
   );
 };

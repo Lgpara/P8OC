@@ -1,16 +1,15 @@
 import leftArrow from "../../../../content/images/left_arrow.svg";
 import rightArrow from "../../../../content/images/right_arrow.svg";
-import data from "../../../../content/data.json"
 import "./styles/carousel.css"
 import React, { useState } from 'react';
 
 
 
 function Carousel (props) {
-    const index = props.appartementIndex
+    const index = props.appartementData
     const [carouselPos, setCarouselPos] = useState(0)
-    const carouselImgs = data[index].pictures[carouselPos]
-    const carouselLength = data[index].pictures.length
+    const carouselImgs = index.pictures[carouselPos]
+    const carouselLength = index.pictures.length
 
     const leftClick = () => {
         if(carouselPos === 0){

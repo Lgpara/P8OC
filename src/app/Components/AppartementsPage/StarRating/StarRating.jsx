@@ -1,12 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import "./styles/starRating.css"
-import data from "../../../../content/data.json"
 
 
 function starRating(props){
-    const index = props.appartementIndex
-    const stars = data[index].rating
+    const data = props.appartementData
+    const stars = data.rating
     const emptyStars = 5 - stars
     const starsTab = []
     const emptyStarsTab =[]

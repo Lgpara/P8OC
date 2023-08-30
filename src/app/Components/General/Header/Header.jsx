@@ -1,13 +1,8 @@
 import logo from './LOGO.svg';
 import './styles/header.css';
 import { NavLink } from 'react-router-dom';
-import data from "../../../../content/data.json"
-import { useEffect } from 'react';
 
 function Header() {
-  useEffect(()=>{  
-    localStorage.setItem('Data', JSON.stringify(data));
-  })
 
   return (
     <header>

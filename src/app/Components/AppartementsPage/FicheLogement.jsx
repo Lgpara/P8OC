@@ -18,6 +18,7 @@ function FicheLogement() {
       const newIndex = dataFromLocalStorage.findIndex(location => location.id === id);
       if (newIndex >= 0){
         setIndex(newIndex)
+        
       } else {
         navigate("/*")
       }
@@ -26,18 +27,18 @@ function FicheLogement() {
   }, [id, dataFromLocalStorage]);
   return (
     <main>
-      <Carousel appartementIndex={index} />
+      <Carousel appartementData={dataFromLocalStorage[index]} />
       <div className="infosBloc">
         <div className="leftPart">
-          <AppartementTitle appartementIndex={index} />
-          <AppartementTags appartementIndex={index} />
+          <AppartementTitle appartementData={dataFromLocalStorage[index]} />
+          <AppartementTags appartementData={dataFromLocalStorage[index]} />
         </div>
         <div className="rightPart">
-          <Profile appartementIndex={index} />
-          <StarRating appartementIndex={index} />
+          <Profile appartementData={dataFromLocalStorage[index]} />
+          <StarRating appartementData={dataFromLocalStorage[index]} />
         </div>
       </div>
-      <AppartementInfos appartementIndex={index} />
+      <AppartementInfos appartementData={dataFromLocalStorage[index]} />
     </main>
   );
 }

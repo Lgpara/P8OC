@@ -1,12 +1,12 @@
-import data from "../../../../content/data.json"
+
 import "./styles/appartementTags.css"
 
 
 function AppartementTags(props){
-    const index = props.appartementIndex
+    const data = props.appartementData
     return(
         <div className="tagsContainer">
-            {data[index].tags.map((tags) => (
+            {data.tags.map((tags) => (
                 <p className="tags" key={tags}>{tags}</p>
             ))}
         </div>
