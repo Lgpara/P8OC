@@ -17,9 +17,6 @@ import data from "./content/data.json"
 import reportWebVitals from './reportWebVitals';
 
 const App = () => {
-  useEffect(()=>{  
-    localStorage.setItem('Data', JSON.stringify(data));
-  })
   return (
     <BrowserRouter>
         <Header />
