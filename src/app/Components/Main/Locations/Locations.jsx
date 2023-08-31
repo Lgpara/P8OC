@@ -1,11 +1,11 @@
 import "./styles/locations.css"
 import { Link } from "react-router-dom"
+import data from "../../../../content/data.json"
 
 function Location () {
-    const dataFromLocalStorage = JSON.parse(localStorage.getItem('Data'))
     return (
         <div className="locCardContainer">
-            {dataFromLocalStorage.map(location => {
+            {data.map(location => {
                 return (
                     <div key={location.id} className="locCard">
                         <Link to={`/fiche-logement/${location.id}`} className="imgContainer">

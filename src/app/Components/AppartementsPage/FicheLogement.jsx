@@ -7,38 +7,36 @@ import StarRating from "./StarRating/StarRating";
 import Profile from "./Profile/Profile";
 import "./styles/ficheLogement.css";
 import { useParams, useNavigate } from "react-router-dom";
+import data from "../../../content/data.json"
 
 function FicheLogement() {
   const { id } = useParams();
   const [index, setIndex] = useState(0);
-  const dataFromLocalStorage = JSON.parse(localStorage.getItem('Data'));
   const navigate = useNavigate()
   useEffect(() => {
-    if (dataFromLocalStorage) {
-      const newIndex = dataFromLocalStorage.findIndex(location => location.id === id);
-      if (newIndex >= 0){
-        setIndex(newIndex)
-        
-      } else {
-        navigate("/*")
-      }
-    } 
+    const newIndex = data.findIndex(location => location.id === id);
+    if (newIndex >= 0){
+      setIndex(newIndex)
+      
+    } else {
+      navigate("/*")
+    }
     // eslint-disable-next-line
-  }, [id, dataFromLocalStorage]);
+  }, [id, data]);
   return (
     <main>
-      <Carousel appartementData={dataFromLocalStorage[index]} />
+      <Carousel appartementData={data[index]} />
       <div className="infosBloc">
         <div className="leftPart">
-          <AppartementTitle appartementData={dataFromLocalStorage[index]} />
-          <AppartementTags appartementData={dataFromLocalStorage[index]} />
+          <AppartementTitle appartementData={data[index]} />
+          <AppartementTags appartementData={data[index]} />
         </div>
         <div className="rightPart">
-          <Profile appartementData={dataFromLocalStorage[index]} />
-          <StarRating appartementData={dataFromLocalStorage[index]} />
+          <Profile appartementData={data[index]} />
+          <StarRating appartementData={data[index]} />
         </div>
       </div>
-      <AppartementInfos appartementData={dataFromLocalStorage[index]} />
+      <AppartementInfos appartementData={data[index]} />
     </main>
   );
 }
